@@ -85,12 +85,12 @@ export default function ScrambleScreen({ onBack }: { onBack: () => void }) {
       </Appbar.Header>
       <ScrollView contentContainerStyle={{alignItems: 'center', paddingBottom: 32}}>
         <Text style={styles.title}>Team Scramble</Text>
-        <Text style={styles.subtitle}>Number of Players</Text>
         <Picker
           selectedValue={numPlayers}
           style={styles.picker}
           onValueChange={v => setNumPlayers(Number(v))}
         >
+          <Picker.Item label="Select Number of Players" value={0} />
           <Picker.Item label="2" value={2} />
           <Picker.Item label="3" value={3} />
           <Picker.Item label="4" value={4} />
@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
   title: { fontSize: 28, fontWeight: 'bold', marginBottom: 24 },
   subtitle: { fontSize: 18, marginBottom: 16 },
   pickerLabel: { fontSize: 16, marginRight: 8 },
-  picker: { height: 40, width: 200, backgroundColor: '#fff', borderRadius: 6, borderColor: '#ccc', borderWidth: 1, fontSize: 18 },
+  picker: { height: 50, width: 200, backgroundColor: '#fff', borderRadius: 6, borderColor: '#ccc', borderWidth: 1, fontSize: 12 },
   inputRow: { flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginBottom: 4 },
   inputLabel: { fontSize: 16, color: '#333', width: '48%' },
   result: { fontSize: 18, color: '#007b55', marginVertical: 12, fontWeight: 'bold' },

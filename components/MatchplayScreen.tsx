@@ -117,7 +117,8 @@ export default function MatchplayScreen({ onBack }: { onBack: () => void }) {
       const och1 = Math.round(ohi * (osr / 113) + (ocr - op));
       const diff = Math.abs(ch1 - och1);
       const higher = ch1 > och1 ? 'Player 1' : 'Opponent';
-      setResult(`Singles Matchplay\nPlayer 1 Course Handicap: ${ch1}\nOpponent Course Handicap: ${och1}\nFull difference: ${diff} shots given by ${higher}.`);
+      const lower = ch1 < och1 ? 'Player 1' : 'Opponent';
+      setResult(`Singles Matchplay\nPlayer 1 Course Handicap: ${ch1}\nOpponent Course Handicap: ${och1}\nFull difference: ${diff} shots given to ${higher} by ${lower}.`);
       return;
     }
     // Team 1 (Player 1 & 2)
@@ -191,7 +192,7 @@ export default function MatchplayScreen({ onBack }: { onBack: () => void }) {
       </Appbar.Header>
       <ScrollView contentContainerStyle={{alignItems: 'center', paddingBottom: 32}}>
         <Text style={styles.title}>Matchplay</Text>
-        <View style={{ width: '100%', alignItems: 'stretch', marginBottom: 8 }}>
+        <View style={{ width: '100%', alignItems: 'center', marginBottom: 8 }}>
           <GameTypePicker
             value={gameType}
             options={matchplayGameTypeOptions}

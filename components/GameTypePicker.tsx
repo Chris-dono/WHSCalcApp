@@ -9,10 +9,9 @@ export interface GameTypePickerProps {
   onChange: (value: string) => void;
 }
 
-export function GameTypePicker({ label = 'Game Type', value, options, onChange }: GameTypePickerProps) {
+export function GameTypePicker({ value, options, onChange }: GameTypePickerProps) {
   return (
     <View style={gameTypeStyles.container}>
-      <Text style={gameTypeStyles.label}>{label}:</Text>
       <Picker
         selectedValue={value}
         style={gameTypeStyles.picker}
@@ -28,6 +27,6 @@ export function GameTypePicker({ label = 'Game Type', value, options, onChange }
 
 const gameTypeStyles = StyleSheet.create({
   container: { flexDirection: 'row', alignItems: 'center', marginBottom: 16, width: 250, backgroundColor: '#fff', borderRadius: 6, borderColor: '#ccc', borderWidth: 1, paddingHorizontal: 10 },
-  label: { fontSize: 12, marginRight: 8 },
-  picker: { height: 50, width: '100%', backgroundColor: '#fff', borderRadius: 6, borderColor: '#ccc', borderWidth: 1, fontSize: 10 },
+  label: { fontSize: 15, marginRight: 8 },
+  picker: { height: 60, width: 250, backgroundColor: '#fff', borderRadius: 6, borderColor: '#ccc', borderWidth: 1, fontSize: 12 },
 });

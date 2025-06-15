@@ -93,7 +93,7 @@ export default function PairsScreen({ onBack }: { onBack: () => void }) {
       </Appbar.Header>
       <ScrollView contentContainerStyle={{alignItems: 'center', paddingBottom: 32}}>
         <Text style={styles.title}>Pairs Event</Text>
-        <View style={{ width: '100%', alignItems: 'stretch', marginBottom: 8 }}>
+        <View style={{ width: '100%', alignItems: 'center', marginBottom: 8 }}>
           <GameTypePicker
             value={gameType}
             options={gameTypeOptions}
