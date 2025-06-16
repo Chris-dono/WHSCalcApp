@@ -7,7 +7,7 @@ const COURSE_DATA: { [course: string]: { [tee: string]: { courseRating: string; 
     black: { courseRating: '72.8', slopeRating: '130', par: '72' },
     white: { courseRating: '70.8', slopeRating: '128', par: '72' },
     'gold-men': { courseRating: '68.2', slopeRating: '123', par: '72' },
-    'gold-ladies': { courseRating: '73.4', slopeRating: '123', par: '72' },
+    'gold-ladies': { courseRating: '73.4', slopeRating: '128', par: '72' },
   },
 };
 
