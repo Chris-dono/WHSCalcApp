@@ -191,7 +191,7 @@ export default function MatchplayScreen({ onBack }: { onBack: () => void }) {
       </Appbar.Header>
       <ScrollView contentContainerStyle={{alignItems: 'center', paddingBottom: 32}}>
         <Text style={styles.title}>Matchplay</Text>
-        <View style={{ width: '100%', alignItems: 'stretch', marginBottom: 8 }}>
+        <View style={{ width: '100%', alignItems: 'center', marginBottom: 8 }}>
           <GameTypePicker
             value={gameType}
             options={matchplayGameTypeOptions}
@@ -372,7 +372,7 @@ export default function MatchplayScreen({ onBack }: { onBack: () => void }) {
 
 const styles = StyleSheet.create({
   title: { fontSize: 28, fontWeight: 'bold', marginBottom: 24 },
-  pickerContainer: { flexDirection: 'row', alignItems: 'center', marginBottom: 16, width: '100%', backgroundColor: '#fff', borderRadius: 4, borderColor: '#ccc', borderWidth: 0, paddingHorizontal: 10 },
+  pickerContainer: { flexDirection: 'row', alignItems: 'center', marginBottom: 16, width: '100%', backgroundColor: '#fff', borderRadius: 4, borderColor: '#ccc', borderWidth: 0 },
   pickerLabel: { fontSize: 12, marginRight: 8 },
   picker: { height:100, width: '100%', backgroundColor: '#fff', borderRadius: 4, borderColor: '#ccc', borderWidth: 0, fontSize: 16 },
   result: { fontSize: 18, color: '#007b55', marginVertical: 10, fontWeight: 'bold' },

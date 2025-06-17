@@ -21,8 +21,6 @@ export default function StrokeplayScreen({ onBack }: { onBack: () => void }) {
       setResult('Please enter valid numbers.');
       return;
     }
-    const hicalc = hi * (sr / 113);
-    const padjustment = cr - p;
     const courseHandicapRaw = hi * (sr / 113) + (cr - p);
     const courseHandicap = Math.round(courseHandicapRaw);
     const playingHandicap = courseHandicapRaw * 0.95;

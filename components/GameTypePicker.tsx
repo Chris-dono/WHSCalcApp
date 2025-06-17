@@ -3,13 +3,12 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 
 export interface GameTypePickerProps {
-  label?: string;
   value: string;
   options: { key: string; label: string }[];
   onChange: (value: string) => void;
 }
 
-export function GameTypePicker({ label = 'Game Type', value, options, onChange }: GameTypePickerProps) {
+export function GameTypePicker({ value, options, onChange }: GameTypePickerProps) {
   return (
     <View style={gameTypeStyles.container}>
       <Picker
@@ -26,7 +25,7 @@ export function GameTypePicker({ label = 'Game Type', value, options, onChange }
 }
 
 const gameTypeStyles = StyleSheet.create({
-  container: { flexDirection: 'row', alignItems: 'center', marginBottom: 16, width: 250, backgroundColor: '#fff', borderRadius: 6, borderColor: '#ccc', borderWidth: 1, paddingHorizontal: 10 },
-  label: { fontSize: 12, marginRight: 8 },
-  picker: { height: 50, width: '100%', backgroundColor: '#fff', borderRadius: 6, borderColor: '#ccc', borderWidth: 1, fontSize: 10 },
+  container: { flexDirection: 'row', alignItems: 'center', marginBottom: 16, width: 250, backgroundColor: '#fff', borderRadius: 6, borderColor: '#ccc', borderWidth: 1 },
+  //label: { fontSize: 12, marginRight: 8 },
+  picker: { alignItems: 'center', height: 50, width: '100%', backgroundColor: '#fff', borderRadius: 6, borderColor: '#ccc', borderWidth: 1, fontSize: 10 },
 });
