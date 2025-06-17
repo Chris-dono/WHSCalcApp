@@ -1,5 +1,5 @@
 {
-  "name": "whscalcexpoport",
+  "name": "golfcalcapp",
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
@@ -10,6 +10,7 @@
   "dependencies": {
     "@expo/metro-runtime": "~5.0.4",
     "@react-native-picker/picker": "2.11.0",
+    "@types/react-native": "^0.72.8",
     "expo": "~53.0.0",
     "expo-status-bar": "~2.2.3",
     "metro": "^0.82.0",

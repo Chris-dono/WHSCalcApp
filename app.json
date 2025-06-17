@@ -1,6 +1,7 @@
-{  "expo": {
-    "name": "WHSCalcExpoPort",
-    "slug": "WHSCalcExpoPort",
+{
+  "expo": {
+    "name": "GolfCalc",
+    "slug": "golfcalc",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,17 +16,22 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.whscalcexpoport"
+      "bundleIdentifier": "com.chrisdono.golfcalc"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.whscalcexpoport"
+      "package": "com.chrisdono.golfcalc"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e1b5fada-f6b0-4f1b-be98-d7135326b32b"
+      }
     }
   }
 }

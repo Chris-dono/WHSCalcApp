@@ -12,7 +12,6 @@ export interface GameTypePickerProps {
 export function GameTypePicker({ label = 'Game Type', value, options, onChange }: GameTypePickerProps) {
   return (
     <View style={gameTypeStyles.container}>
-      <Text style={gameTypeStyles.label}>{label}:</Text>
       <Picker
         selectedValue={value}
         style={gameTypeStyles.picker}

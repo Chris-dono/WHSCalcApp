@@ -41,7 +41,6 @@ export default function CourseTeePicker({
     <View style={{ width: '100%' }}>
       <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 15, width: '100%' }}>
         <View style={{ flex: 1, marginRight: 8 }}>
-          <Text style={styles.pickerLabel}>Course:</Text>
           <Picker
             selectedValue={selectedCourse}
             style={styles.picker}
@@ -52,7 +51,6 @@ export default function CourseTeePicker({
           </Picker>
         </View>
         <View style={{ flex: 1, marginLeft: 8 }}>
-          <Text style={styles.pickerLabel}>Tee:</Text>
           <Picker
             selectedValue={selectedTee}
             style={styles.picker}
