@@ -21,10 +21,15 @@ export default function StrokeplayScreen({ onBack }: { onBack: () => void }) {
       setResult('Please enter valid numbers.');
       return;
     }
+    const hicalc = hi * (sr / 113);
+    const padjustment = cr - p;
     const courseHandicapRaw = hi * (sr / 113) + (cr - p);
     const courseHandicap = Math.round(courseHandicapRaw);
-    const playingHandicap = Math.round(courseHandicap * 0.95);
-    setResult(`Course Handicap: ${courseHandicap}\nPlaying Handicap (95%): ${playingHandicap}`);
+    const playingHandicap = courseHandicapRaw * 0.95;
+    const playingHandicapRounded = Math.round(playingHandicap);
+    setResult(`Course Handicap: ${courseHandicap}
+      \nPlaying Handicap (95%): ${playingHandicapRounded}
+      `);
   };
 
   return (
