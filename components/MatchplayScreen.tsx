@@ -219,12 +219,12 @@ export default function MatchplayScreen({ onBack }: { onBack: () => void }) {
           <Card.Content>
             <Title>Player 1</Title>
             <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-              <PaperTextInput label="Handicap Index" keyboardType="numeric" value={handicapIndex} onChangeText={setHandicapIndex} style={{ flex: 1 }} returnKeyType="done" />
-              <PaperTextInput label="Course Rating" keyboardType="numeric" value={courseRating} onChangeText={setCourseRating} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Handicap Index" keyboardType="decimal-pad" value={handicapIndex} onChangeText={setHandicapIndex} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Course Rating" keyboardType="decimal-pad" value={courseRating} onChangeText={setCourseRating} style={{ flex: 1 }} returnKeyType="done" />
             </View>
             <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-              <PaperTextInput label="Slope Rating" keyboardType="numeric" value={slopeRating} onChangeText={setSlopeRating} style={{ flex: 1 }} returnKeyType="done" />
-              <PaperTextInput label="Par" keyboardType="numeric" value={par} onChangeText={setPar} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Slope Rating" keyboardType="decimal-pad" value={slopeRating} onChangeText={setSlopeRating} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Par" keyboardType="decimal-pad" value={par} onChangeText={setPar} style={{ flex: 1 }} returnKeyType="done" />
             </View>
           </Card.Content>
         </Card>
@@ -251,12 +251,12 @@ export default function MatchplayScreen({ onBack }: { onBack: () => void }) {
               <Card.Content>
                 <Title>Player 2</Title>
                 <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-                  <PaperTextInput label="Handicap Index (Player 2)" keyboardType="numeric" value={handicapIndex2} onChangeText={setHandicapIndex2} style={{ flex: 1 }} returnKeyType="done" />
-                  <PaperTextInput label="Course Rating (Player 2)" keyboardType="numeric" value={courseRating2} onChangeText={setCourseRating2} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Handicap Index (Player 2)" keyboardType="decimal-pad" value={handicapIndex2} onChangeText={setHandicapIndex2} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Course Rating (Player 2)" keyboardType="decimal-pad" value={courseRating2} onChangeText={setCourseRating2} style={{ flex: 1 }} returnKeyType="done" />
                 </View>
                 <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-                  <PaperTextInput label="Slope Rating (Player 2)" keyboardType="numeric" value={slopeRating2} onChangeText={setSlopeRating2} style={{ flex: 1 }} returnKeyType="done" />
-                  <PaperTextInput label="Par (Player 2)" keyboardType="numeric" value={par2} onChangeText={setPar2} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Slope Rating (Player 2)" keyboardType="decimal-pad" value={slopeRating2} onChangeText={setSlopeRating2} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Par (Player 2)" keyboardType="decimal-pad" value={par2} onChangeText={setPar2} style={{ flex: 1 }} returnKeyType="done" />
                 </View>
               </Card.Content>
             </Card>
@@ -286,12 +286,12 @@ export default function MatchplayScreen({ onBack }: { onBack: () => void }) {
               <Card.Content>
                 <Title>Opponent</Title>
                 <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-                  <PaperTextInput label="Handicap Index (Opponent)" keyboardType="numeric" value={oppHandicapIndex} onChangeText={setOppHandicapIndex} style={{ flex: 1 }} returnKeyType="done" />
-                  <PaperTextInput label="Course Rating (Opponent)" keyboardType="numeric" value={oppCourseRating} onChangeText={setOppCourseRating} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Handicap Index (Opponent)" keyboardType="decimal-pad" value={oppHandicapIndex} onChangeText={setOppHandicapIndex} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Course Rating (Opponent)" keyboardType="decimal-pad" value={oppCourseRating} onChangeText={setOppCourseRating} style={{ flex: 1 }} returnKeyType="done" />
                 </View>
                 <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-                  <PaperTextInput label="Slope Rating (Opponent)" keyboardType="numeric" value={oppSlopeRating} onChangeText={setOppSlopeRating} style={{ flex: 1 }} returnKeyType="done" />
-                  <PaperTextInput label="Par (Opponent)" keyboardType="numeric" value={oppPar} onChangeText={setOppPar} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Slope Rating (Opponent)" keyboardType="decimal-pad" value={oppSlopeRating} onChangeText={setOppSlopeRating} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Par (Opponent)" keyboardType="decimal-pad" value={oppPar} onChangeText={setOppPar} style={{ flex: 1 }} returnKeyType="done" />
                 </View>
               </Card.Content>
             </Card>
@@ -319,12 +319,12 @@ export default function MatchplayScreen({ onBack }: { onBack: () => void }) {
               <Card.Content>
                 <Title>Opponent 1</Title>
                 <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-                  <PaperTextInput label="Handicap Index (Opponent 1)" keyboardType="numeric" value={oppHandicapIndex1} onChangeText={setOppHandicapIndex1} style={{ flex: 1 }} returnKeyType="done" />
-                  <PaperTextInput label="Course Rating (Opponent 1)" keyboardType="numeric" value={oppCourseRating1} onChangeText={setOppCourseRating1} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Handicap Index (Opponent 1)" keyboardType="decimal-pad" value={oppHandicapIndex1} onChangeText={setOppHandicapIndex1} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Course Rating (Opponent 1)" keyboardType="decimal-pad" value={oppCourseRating1} onChangeText={setOppCourseRating1} style={{ flex: 1 }} returnKeyType="done" />
                 </View>
                 <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-                  <PaperTextInput label="Slope Rating (Opponent 1)" keyboardType="numeric" value={oppSlopeRating1} onChangeText={setOppSlopeRating1} style={{ flex: 1 }} returnKeyType="done" />
-                  <PaperTextInput label="Par (Opponent 1)" keyboardType="numeric" value={oppPar1} onChangeText={setOppPar1} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Slope Rating (Opponent 1)" keyboardType="decimal-pad" value={oppSlopeRating1} onChangeText={setOppSlopeRating1} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Par (Opponent 1)" keyboardType="decimal-pad" value={oppPar1} onChangeText={setOppPar1} style={{ flex: 1 }} returnKeyType="done" />
                 </View>
               </Card.Content>
             </Card>
@@ -349,12 +349,12 @@ export default function MatchplayScreen({ onBack }: { onBack: () => void }) {
               <Card.Content>
                 <Title>Opponent 2</Title>
                 <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-                  <PaperTextInput label="Handicap Index (Opponent 2)" keyboardType="numeric" value={oppHandicapIndex2} onChangeText={setOppHandicapIndex2} style={{ flex: 1 }} returnKeyType="done" />
-                  <PaperTextInput label="Course Rating (Opponent 2)" keyboardType="numeric" value={oppCourseRating2} onChangeText={setOppCourseRating2} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Handicap Index (Opponent 2)" keyboardType="decimal-pad" value={oppHandicapIndex2} onChangeText={setOppHandicapIndex2} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Course Rating (Opponent 2)" keyboardType="decimal-pad" value={oppCourseRating2} onChangeText={setOppCourseRating2} style={{ flex: 1 }} returnKeyType="done" />
                 </View>
                 <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-                  <PaperTextInput label="Slope Rating (Opponent 2)" keyboardType="numeric" value={oppSlopeRating2} onChangeText={setOppSlopeRating2} style={{ flex: 1 }} returnKeyType="done" />
-                  <PaperTextInput label="Par (Opponent 2)" keyboardType="numeric" value={oppPar2} onChangeText={setOppPar2} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Slope Rating (Opponent 2)" keyboardType="decimal-pad" value={oppSlopeRating2} onChangeText={setOppSlopeRating2} style={{ flex: 1 }} returnKeyType="done" />
+                  <PaperTextInput label="Par (Opponent 2)" keyboardType="decimal-pad" value={oppPar2} onChangeText={setOppPar2} style={{ flex: 1 }} returnKeyType="done" />
                 </View>
               </Card.Content>
             </Card>

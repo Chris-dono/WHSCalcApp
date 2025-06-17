@@ -116,7 +116,7 @@ export default function ScrambleScreen({ onBack }: { onBack: () => void }) {
             <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
               <PaperTextInput
                 label="Handicap Index"
-                keyboardType="numeric"
+                keyboardType="decimal-pad"
                 value={players[idx].handicapIndex}
                 onChangeText={v => handlePlayerChange(idx, 'handicapIndex', v)}
                 style={{ flex: 1 }}
@@ -124,7 +124,7 @@ export default function ScrambleScreen({ onBack }: { onBack: () => void }) {
               />
               <PaperTextInput
                 label="Course Rating"
-                keyboardType="numeric"
+                keyboardType="decimal-pad"
                 value={players[idx].courseRating}
                 onChangeText={v => handlePlayerChange(idx, 'courseRating', v)}
                 style={{ flex: 1 }}
@@ -134,7 +134,7 @@ export default function ScrambleScreen({ onBack }: { onBack: () => void }) {
             <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
               <PaperTextInput
                 label="Slope Rating"
-                keyboardType="numeric"
+                keyboardType="decimal-pad"
                 value={players[idx].slopeRating}
                 onChangeText={v => handlePlayerChange(idx, 'slopeRating', v)}
                 style={{ flex: 1 }}
@@ -142,7 +142,7 @@ export default function ScrambleScreen({ onBack }: { onBack: () => void }) {
               />
               <PaperTextInput
                 label="Par"
-                keyboardType="numeric"
+                keyboardType="decimal-pad"
                 value={players[idx].par}
                 onChangeText={v => handlePlayerChange(idx, 'par', v)}
                 style={{ flex: 1 }}

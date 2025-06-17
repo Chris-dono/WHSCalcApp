@@ -121,12 +121,12 @@ export default function PairsScreen({ onBack }: { onBack: () => void }) {
           <Card.Content>
             <Title>Player 1</Title>
             <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-              <PaperTextInput label="Handicap Index" keyboardType="numeric" value={handicapIndex} onChangeText={setHandicapIndex} style={{ flex: 1 }} returnKeyType="done" />
-              <PaperTextInput label="Course Rating" keyboardType="numeric" value={courseRating} onChangeText={setCourseRating} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Handicap Index" keyboardType="decimal-pad" value={handicapIndex} onChangeText={setHandicapIndex} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Course Rating" keyboardType="decimal-pad" value={courseRating} onChangeText={setCourseRating} style={{ flex: 1 }} returnKeyType="done" />
             </View>
             <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-              <PaperTextInput label="Slope Rating" keyboardType="numeric" value={slopeRating} onChangeText={setSlopeRating} style={{ flex: 1 }} returnKeyType="done" />
-              <PaperTextInput label="Par" keyboardType="numeric" value={par} onChangeText={setPar} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Slope Rating" keyboardType="decimal-pad" value={slopeRating} onChangeText={setSlopeRating} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Par" keyboardType="decimal-pad" value={par} onChangeText={setPar} style={{ flex: 1 }} returnKeyType="done" />
             </View>
           </Card.Content>
         </Card>
@@ -151,12 +151,12 @@ export default function PairsScreen({ onBack }: { onBack: () => void }) {
           <Card.Content>
             <Title>Player 2</Title>
             <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-              <PaperTextInput label="Handicap Index (Player 2)" keyboardType="numeric" value={handicapIndex2} onChangeText={setHandicapIndex2} style={{ flex: 1 }} returnKeyType="done" />
-              <PaperTextInput label="Course Rating (Player 2)" keyboardType="numeric" value={courseRating2} onChangeText={setCourseRating2} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Handicap Index (Player 2)" keyboardType="decimal-pad" value={handicapIndex2} onChangeText={setHandicapIndex2} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Course Rating (Player 2)" keyboardType="decimal-pad" value={courseRating2} onChangeText={setCourseRating2} style={{ flex: 1 }} returnKeyType="done" />
             </View>
             <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-              <PaperTextInput label="Slope Rating (Player 2)" keyboardType="numeric" value={slopeRating2} onChangeText={setSlopeRating2} style={{ flex: 1 }} returnKeyType="done" />
-              <PaperTextInput label="Par (Player 2)" keyboardType="numeric" value={par2} onChangeText={setPar2} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Slope Rating (Player 2)" keyboardType="decimal-pad" value={slopeRating2} onChangeText={setSlopeRating2} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Par (Player 2)" keyboardType="decimal-pad" value={par2} onChangeText={setPar2} style={{ flex: 1 }} returnKeyType="done" />
             </View>
           </Card.Content>
         </Card>

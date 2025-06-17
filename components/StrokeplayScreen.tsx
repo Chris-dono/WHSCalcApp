@@ -56,12 +56,12 @@ export default function StrokeplayScreen({ onBack }: { onBack: () => void }) {
           <Card.Content>
             <Title>Player</Title>
             <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-              <PaperTextInput label="Handicap Index" keyboardType="numeric" value={handicapIndex} onChangeText={setHandicapIndex} style={{ flex: 1 }} returnKeyType="done" />
-              <PaperTextInput label="Course Rating" keyboardType="numeric" value={courseRating} onChangeText={setCourseRating} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Handicap Index" keyboardType="decimal-pad" value={handicapIndex} onChangeText={setHandicapIndex} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Course Rating" keyboardType="decimal-pad" value={courseRating} onChangeText={setCourseRating} style={{ flex: 1 }} returnKeyType="done" />
             </View>
             <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-              <PaperTextInput label="Slope Rating" keyboardType="numeric" value={slopeRating} onChangeText={setSlopeRating} style={{ flex: 1 }} returnKeyType="done" />
-              <PaperTextInput label="Par" keyboardType="numeric" value={par} onChangeText={setPar} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Slope Rating" keyboardType="decimal-pad" value={slopeRating} onChangeText={setSlopeRating} style={{ flex: 1 }} returnKeyType="done" />
+              <PaperTextInput label="Par" keyboardType="decimal-pad" value={par} onChangeText={setPar} style={{ flex: 1 }} returnKeyType="done" />
             </View>
           </Card.Content>
         </Card>
